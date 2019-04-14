@@ -5,8 +5,13 @@
  */
 package com.validity.controller;
 
+import com.validity.checker.DuplicateCheck;
+import com.validity.helper.CSVData;
+import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
@@ -22,7 +27,20 @@ public class CSVController extends AbstractController {
     protected ModelAndView handleRequestInternal(
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
-        throw new UnsupportedOperationException("Not yet implemented");
+        
+        String fileName = request.getParameter("selection");
+                ModelAndView mv = null;
+
+         
+        DuplicateCheck removeDuplicate = new DuplicateCheck();
+        ArrayList<CSVData> csvDataNoDuplicate = removeDuplicate.CsvDataWithNoDuplicate(fileName);
+         mv = new ModelAndView("displaydata", "noduplicate", csvDataNoDuplicate);
+
+        return mv;
+        
+        
     }
     
+      
+
 }

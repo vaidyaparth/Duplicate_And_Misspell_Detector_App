@@ -19,9 +19,14 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+
+                <prop key="displaydata.htm">CSVController</prop>
+                
             </props>
         </property>
     </bean>
+    <bean name="CSVController" class="com.validity.controller.CSVController"></bean>
+
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
