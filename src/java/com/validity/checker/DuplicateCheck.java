@@ -29,12 +29,12 @@ public class DuplicateCheck {
         CSVDao csvReader = new CSVDao();
         //passing the file path for reding csv
         if(file.equals("Normal") ){
-            File ff = new File("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Validity_Demo\\src\\java\\resources\\normal.csv");
+            File ff = new File("\\src\\java\\resources\\normal.csv");
             CsvDataNoDuplicate = csvReader.getCsvData(ff.getAbsolutePath());
             System.out.println("Normal");
         }
         else {
-            File ff = new File("src\\main\\resources\\advanced.csv");
+            File ff = new File("src\\java\\resources\\advanced.csv");
             CsvDataNoDuplicate = csvReader.getCsvData(ff.getAbsolutePath());
             System.out.println("Advance ");
         }

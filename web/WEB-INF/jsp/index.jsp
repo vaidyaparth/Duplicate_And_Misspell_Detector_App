@@ -12,7 +12,9 @@
     <body>
         <h2>Welcome To Duplicate Detector Application</h2>
         <form action ="displaydata.htm" name="myform" method = "Get">
+             
             <LABEL FOR="selection"><b>Please make your selection below:</b><br /></LABEL>
+            <br>
             <select name="selection" id="ddtype">
                 <option value="Normal">Normal</option>
                 <option value="Advanced">Advanced</option>
@@ -21,7 +23,7 @@
             <input type="radio" name="userSelection" value="No Duplicates" required/>No Duplicates<br/>
             <input type="radio" name="userSelection" value="Mispell" required/>Misspells<br/>
             <input type="radio" name="userSelection" value="No Mispell" required/>No Misspell<br/>
-            
+            <br>
             <input type="Submit" name="Submit" value ="Submit">
         </form>
     </body>
