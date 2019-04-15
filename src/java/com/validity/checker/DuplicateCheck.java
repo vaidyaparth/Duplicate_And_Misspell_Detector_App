@@ -5,7 +5,6 @@
  */
 package com.validity.checker;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 import com.validity.dao.CSVDao;
 import com.validity.helper.CSVData;
 import java.io.File;
@@ -27,12 +26,11 @@ public class DuplicateCheck {
 
     public ArrayList<CSVData> CsvDataWithNoDuplicate(String file){
         ArrayList<CSVData> CsvDataNoDuplicate = new ArrayList<>();
-
         CSVDao csvReader = new CSVDao();
         //passing the file path for reding csv
         if(file.equals("Normal") ){
             File ff = new File("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Validity_Demo\\src\\java\\resources\\normal.csv");
-            CsvDataNoDuplicate = csvReader.getCsvData(ff.toString());
+            CsvDataNoDuplicate = csvReader.getCsvData(ff.getAbsolutePath());
             System.out.println("Normal");
         }
         else {

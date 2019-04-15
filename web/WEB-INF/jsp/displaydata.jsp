@@ -14,8 +14,14 @@
         <title>Display</title>
     </head>
     <body>
-        <h1>Data With No Duplicate</h1>
-         <table style="width:100%" border ="2" cellspacing="4" cellpadding="13" bgcolor="beige">
+       <%
+        String b=request.getParameter("userSelection");
+        out.println("<h1>");
+        out.println("Data with "+b);
+        out.println("</h1>");
+        %>
+
+        <table style="width:100%" border ="2" cellspacing="4" cellpadding="13" bgcolor="beige">
             <thead>
             
             <th><b>Id</b></th>
@@ -33,7 +39,7 @@
         </thead>
         <tbody>
 
-            <c:forEach var="a" items="${requestScope.noduplicate}">
+            <c:forEach var="a" items="${requestScope.a}">
                 <tr>
 
                     <td><c:out value="${a.getId()}"/></td>

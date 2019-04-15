@@ -19,7 +19,8 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
-
+                <prop key="1.htm">CSVController</prop>
+                <prop key="2.htm">CSVController</prop>
                 <prop key="displaydata.htm">CSVController</prop>
                 
             </props>
