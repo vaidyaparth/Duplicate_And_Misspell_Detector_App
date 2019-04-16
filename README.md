@@ -7,6 +7,15 @@ Application Details
 * The application is built using Spring MVC
 * The IDE that I have used here is NetBeans 8.2 
 * I have used Apache Tomcat 9.0 server
+
+Take Home Exercise Overview
+
+Exact Duplicates:
+* For an entity to be considered duplicate first name, emailId and Phone number should be same.
+
+Mispelled:
+* A list of all the duplicates and minor changes in spelling(not more than two character) are included.
+
  
 Steps to run the Application
 
