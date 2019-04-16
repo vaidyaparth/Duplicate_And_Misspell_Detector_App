@@ -33,4 +33,7 @@ Steps to run the Application
 
 ![image](https://user-images.githubusercontent.com/46656994/56184057-c7c1e280-5fe6-11e9-9b57-687152ec1327.png)
 
+3. Duplicate Data in the CSV by clicking on duplicate radio button
+
+![image](https://user-images.githubusercontent.com/46656994/56184177-399a2c00-5fe7-11e9-8502-fdc53800c8b9.png)
 
