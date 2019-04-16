@@ -36,4 +36,7 @@ Steps to run the Application
 3. Duplicate Data in the CSV by clicking on duplicate radio button
 
 ![image](https://user-images.githubusercontent.com/46656994/56184177-399a2c00-5fe7-11e9-8502-fdc53800c8b9.png)
+![image](https://user-images.githubusercontent.com/46656994/56184285-8a118980-5fe7-11e9-8568-d1b6fc736197.png)
+
+4. Data without duplicates and mispells can also be view clicking on the corresponding radio buttons
 
