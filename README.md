@@ -7,6 +7,7 @@ Application Details
 * The application is built using Spring MVC
 * The IDE that I have used here is NetBeans 8.2 
 * I have used Apache Tomcat 9.0 server
+* This application works for both normal and advanced csv
 
 Take Home Exercise Overview
 
@@ -24,4 +25,5 @@ Steps to run the Application
 * To run the application please change the file path of csv inside CSVDataWithNoDuplicate method under class DuplicateCheck.java inside package com.validity.checker (For ex: File ff = new File("\\src\\java\\resources\\normal.csv");)
 * The url of the application is (http://localhost:8004/Validity_Demo/index.htm). In my case the port for tomcat is 8004 which can be different in your case
 
+1. The application opens with
 
