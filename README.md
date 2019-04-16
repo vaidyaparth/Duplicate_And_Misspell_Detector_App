@@ -26,4 +26,7 @@ Steps to run the Application
 * The url of the application is (http://localhost:8004/Validity_Demo/index.htm). In my case the port for tomcat is 8004 which can be different in your case
 
 1. The application opens with
+![image](https://user-images.githubusercontent.com/46656994/56183941-63068800-5fe6-11e9-93ad-24ac7dba8771.png)
+
+2. 
 
